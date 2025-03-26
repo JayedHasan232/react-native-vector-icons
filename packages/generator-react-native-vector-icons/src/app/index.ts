@@ -62,6 +62,8 @@ interface Data {
       script: string;
     };
   };
+  versions?: { rnvi: string; upstream: string }[];
+  versionTable?: string;
 }
 
 const { uid, gid } = os.userInfo();
@@ -194,16 +196,7 @@ export default class extends Generator<Arguments> {
       version = '0.0.1';
     }
 
-    const { currentVersion } = this.options;
-    let versionSuffix = '';
-    if (currentVersion && data.versionSuffix && currentVersion.match(data.versionSuffix)) {
-      const preRelease = currentVersion.split(data.versionSuffix)[1];
-      versionSuffix = `${data.versionSuffix}${preRelease}`;
-    } else {
-      versionSuffix = data.versionSuffix ? `${data.versionSuffix}.1` : '';
-    }
-
-    packageJSON.version = `${version}${versionSuffix}`;
+    packageJSON.version = version;
 
     if (data.dependencies) {
       Object.entries(data.dependencies).forEach(([depName, depVersion]) => {
@@ -445,6 +438,15 @@ export default class extends Generator<Arguments> {
     data.source = './src/index.ts';
     if (typeof data.customSrc === 'string') {
       data.source = data.customSrc.endsWith('.tsx') ? './src/index.tsx' : './src/index.ts';
+    }
+
+    if (data.versions) {
+      const versionTable: string[] = [];
+      data.versions.forEach((version) => {
+        versionTable.push(`| <= ${version.rnvi} | ${version.upstream} |`);
+      });
+
+      data.versionTable = versionTable.join('\n');
     }
 
     return data;
