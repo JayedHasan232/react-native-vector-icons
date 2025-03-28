@@ -12,18 +12,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - name: Setup yarn
+      - name: Setup corepack
         run: corepack enable
       - uses: bahmutov/npm-install@v1
         with:
-          install-command: yarn --immutable
+          install-command: pnpm install
 
       - name: Build
         run: |
-          yarn prepare
+          pnpm run prepare
 
       - name: Lint files
-        run: yarn lint:eslint
+        run: pnpm run lint:eslint
 
   biome:
     name: biome
@@ -32,18 +32,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - name: Setup yarn
+      - name: Setup corepack
         run: corepack enable
       - uses: bahmutov/npm-install@v1
         with:
-          install-command: yarn --immutable
+          install-command: pnpm install
 
       - name: Build
         run: |
-          yarn prepare
+          pnpm run prepare
 
       - name: Lint files
-        run: yarn lint:biome
+        run: pnpm run lint:biome
 
   types:
     name: biome
@@ -52,19 +52,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - name: Setup yarn
+      - name: Setup corepack
         run: corepack enable
       - uses: bahmutov/npm-install@v1
         with:
-          install-command: yarn --immutable
+          install-command: pnpm install
 
       - name: Build
         run: |
-          yarn prepare
+          pnpm run prepare
 
       - name: Typecheck files
-        run: yarn lint:types
-
+        run: pnpm run lint:types
 
   knip:
     name: knip
@@ -73,11 +72,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - name: Setup yarn
+      - name: Setup corepack
         run: corepack enable
       - uses: bahmutov/npm-install@v1
         with:
-          install-command: yarn --immutable
+          install-command: pnpm install
 
       - name: Check for unused things
-        run: yarn knip
+        run: pnpm run knip
