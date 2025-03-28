@@ -13,7 +13,7 @@ Font package versions are now independent of upstream font versions and we track
 This will auto detect which packages need to be published on NPM and ask which versions you want to set the packages to.
 
 ```sh
-pnpm run release
+pnpm run release --verbose
 ```
 
 ## Building
@@ -29,7 +29,11 @@ pnpm run prepare
 ## Alpha release
 
 ```sh
-# Add --dry-run to test
-pnpm nx release version --verbose --package @react-native-vector-icons/lucide --preid=alpha
-pnpm nx release publish --verbose --package @react-native-vector-icons/lucide --tag alpha
+# Remove --dry-run to actually publish
+pnpm nx release prerelease --verbose --skip-publish --dry-run
+pnpm nx release publish --verbose --tag alpha --dry-run
+
+# A single package
+pnpm nx release prerelease --verbose --skip-publish --package @react-native-vector-icons/lucide --dry-run
+pnpm nx release publish --verbose --tag alpha --package @react-native-vector-icons/lucide --dry-run
 ```
