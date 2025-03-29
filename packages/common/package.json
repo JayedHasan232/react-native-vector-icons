@@ -90,11 +90,14 @@
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
+    "@react-native-vector-icons/get-image": "workspace:*",
     "react": "*",
     "react-native": "*"
   },
-  "optionalDependencies": {
-    "@react-native-vector-icons/get-image": "workspace:*"
+  "peerDependenciesMeta": {
+    "@react-native-vector-icons/get-image": {
+      "optional": true
+    }
   },
   "engines": {
     "node": ">= 18.0.0"
