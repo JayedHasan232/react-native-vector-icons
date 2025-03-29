@@ -1,3 +1,13 @@
+## 12.0.0-alpha.25 (2025-03-29)
+
+### 🩹 Fixes
+
+- **common:** switch get-image to be an optional peer dependency ([1f4d5974](https://github.com/oblador/react-native-vector-icons/commit/1f4d5974))
+
+### ❤️ Thank You
+
+- John Ferlito @johnf
+
 ## 12.0.0-alpha.24 (2025-03-28)
 
 ### 🚀 Features
