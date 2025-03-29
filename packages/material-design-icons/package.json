@@ -81,7 +81,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@react-native-vector-icons/common": "workspace:*"
+    "@react-native-vector-icons/common": "workspace:^"
   },
   "devDependencies": {
     "@mdi/font": "7.4.47",

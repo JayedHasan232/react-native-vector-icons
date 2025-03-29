@@ -81,7 +81,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@react-native-vector-icons/common": "workspace:*"
+    "@react-native-vector-icons/common": "workspace:^"
   },
   "devDependencies": {
     "css-social-buttons": "1.1.1",

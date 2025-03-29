@@ -90,7 +90,7 @@
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
-    "@react-native-vector-icons/get-image": "workspace:*",
+    "@react-native-vector-icons/get-image": "workspace:^",
     "react": "*",
     "react-native": "*"
   },

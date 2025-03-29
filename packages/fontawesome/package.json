@@ -81,7 +81,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@react-native-vector-icons/common": "workspace:*"
+    "@react-native-vector-icons/common": "workspace:^"
   },
   "devDependencies": {
     "@types/react": "^18.3.18",
