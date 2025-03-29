@@ -1,3 +1,13 @@
+## 12.0.0-alpha.26 (2025-03-29)
+
+### 🩹 Fixes
+
+- be looser with common dependency ([a56399ab](https://github.com/oblador/react-native-vector-icons/commit/a56399ab))
+
+### ❤️ Thank You
+
+- John Ferlito @johnf
+
 ## 12.0.0-alpha.25 (2025-03-29)
 
 ### 🩹 Fixes

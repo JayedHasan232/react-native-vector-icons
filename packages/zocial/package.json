@@ -1,6 +1,6 @@
 {
   "name": "@react-native-vector-icons/zocial",
-  "version": "12.0.0-alpha.24",
+  "version": "12.0.0-alpha.25",
   "description": "Zocial font for react native vector icons",
   "source": "./src/index.ts",
   "main": "./lib/commonjs/index.js",

@@ -75,7 +75,7 @@ importers:
   packages/ant-design:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -140,7 +140,7 @@ importers:
         specifier: ^17.0.0
         version: 17.0.0
       '@react-native-vector-icons/get-image':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../get-image
       picocolors:
         specifier: ^1.1.1
@@ -220,7 +220,7 @@ importers:
   packages/entypo:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -248,7 +248,7 @@ importers:
   packages/evil-icons:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -276,7 +276,7 @@ importers:
   packages/feather:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -304,7 +304,7 @@ importers:
   packages/fontawesome:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -347,7 +347,7 @@ importers:
   packages/fontawesome5:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -378,7 +378,7 @@ importers:
   packages/fontawesome5-pro:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -406,7 +406,7 @@ importers:
   packages/fontawesome6:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -437,7 +437,7 @@ importers:
   packages/fontawesome6-pro:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -467,7 +467,7 @@ importers:
   packages/fontello:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -492,7 +492,7 @@ importers:
   packages/fontisto:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -520,7 +520,7 @@ importers:
   packages/foundation:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -625,7 +625,7 @@ importers:
   packages/icomoon:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -810,7 +810,7 @@ importers:
   packages/ionicons:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -838,7 +838,7 @@ importers:
   packages/lucide:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -866,7 +866,7 @@ importers:
   packages/material-design-icons:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -894,7 +894,7 @@ importers:
   packages/material-icons:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -919,7 +919,7 @@ importers:
   packages/octicons:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -947,7 +947,7 @@ importers:
   packages/simple-line-icons:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
@@ -975,7 +975,7 @@ importers:
   packages/zocial:
     dependencies:
       '@react-native-vector-icons/common':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../common
       react:
         specifier: '*'
